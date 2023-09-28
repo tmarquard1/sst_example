@@ -1,19 +1,16 @@
 //node:20-slim
-
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-	"hostRequirements": {
-	  "cpus": 4
-	},
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "devcontainer",
+    "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {
-                "settings": {},
-                "extensions": [
-                    "GitHub.copilot-chat",
-                    "rangav.vscode-thunder-client",
-                    "donjayamanne.githistory"
-                ]
-            }
-      }
-
+            "extensions": [
+                "GitHub.copilot-chat",
+                "GitHub.copilot",
+                "rangav.vscode-thunder-client",
+                "donjayamanne.githistory"
+            ]
+        }
+    }
 }
