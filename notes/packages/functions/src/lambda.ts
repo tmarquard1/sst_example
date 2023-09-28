@@ -1,10 +1,26 @@
-import fetch from "node-fetch";
+//import fetch from "node-fetch";
 
 export async function main() {
-  // const weather = await checkSFWeather();
-  // console.log(weather.consolidated_weather[0]);
-  // return {};
   console.log("test");
+  var mysql = require('mysql2');
+
+  var connection = mysql.createConnection({
+    host     : "db",
+    user     : "myuser",
+    password : "mypassword",
+    port     : "3306"
+  });
+
+  connection.connect(function(err : any) {
+    if (err) {
+      console.error('Database connection failed: ' + err.stack);
+      return;
+    }
+
+    console.log('Connected to database.');
+  });
+
+  connection.end();
 }
 
 // function checkSFWeather() {

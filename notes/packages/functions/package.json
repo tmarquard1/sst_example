@@ -6,6 +6,9 @@
     "test": "sst bind vitest",
     "typecheck": "tsc -noEmit"
   },
+  "dependencies": {
+    "mysql2": "latest"
+  },
   "devDependencies": {
     "@types/node": "^20.7.1",
     "@types/aws-lambda": "^8.10.122",
