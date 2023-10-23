@@ -27,8 +27,8 @@ importers:
   packages/core:
     dependencies:
       zod:
-        specifier: ^3.22.2
-        version: 3.22.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/node':
         specifier: ^20.7.1
@@ -5351,7 +5351,7 @@ packages:
       uuid: 9.0.1
       ws: 8.14.2
       yargs: 17.7.2
-      zod: 3.22.2
+      zod: 3.22.3
     transitivePeerDependencies:
       - '@types/react'
       - aws-crt
@@ -6012,5 +6012,5 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /zod@3.22.2:
-    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+  /zod@3.22.3:
+    resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
